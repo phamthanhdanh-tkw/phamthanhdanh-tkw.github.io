@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang web cá nhân</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('nencanhan.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #background {
+            position: relative;
+            width: 100%;
+            height: 800px;
+        }
+    </style>
+</head>
+<body>
+    <meta charset="UTF=8">
+    <!-- Trang chủ -->
+    <h1>Trang chủ</h1>
+    <p>Xin chào! Đây là trang cá nhân của</p>
+    <h1>Phạm Thành Danh</h1>
+    <!-- Lịch tập luyện cho tuyển bóng rổ của trường -->
+    <h2>Lịch tập luyện bóng rổ💪</h2>
+    <ul>
+        <li>🏀Trưa thứ 2: 11h30-1h🏀</li>
+        <li>🏀Trưa thứ 3: 11h30-1h🏀</li>
+        <li>🏀Trưa thứ 5: 11h30-1h🏀</li>
+        <li>🏀Trưa thứ 7: 11h30-2h🏀</li>
+    </ul>
+    <!--Lịch đi dạy thêm -->
+    <h2>Lịch đi dạy thêm</h2>
+    <ul>
+        <li>📖Tối thứ 2: 17h30-21h📖</li>
+        <li>📖Tối thứ 4: 17h30-21h📖</li>
+        <li>📖Tối thứ 6: 17h30-21h📖</li>
+    </ul>
+    <!--Để lại lời nhắn-->
+    <h2>Bạn cần tôi giúp gì? Vui lòng để lại thông tin + lời nhắn</h2>
+    <form action="submit_form.php" method="POST">
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email của bạn:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Lời nhắn của bạn:</label>
+        <textarea id="message" name="message" required></textarea><br>
+
+        <input type="submit" value="Gửi">
+    </form>
+</body>
+</html>
